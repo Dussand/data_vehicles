@@ -11,7 +11,6 @@ data_button = st.button("Mostrar la tabla de los datos")
 
 vehicles_df['model_year'] = vehicles_df['model_year'].fillna('No year')
 vehicles_df['cylinders'] = vehicles_df['cylinders'].fillna(0)
-vehicles_df['odometer'] = vehicles_df['odometer'].fillna(vehicles_df['odometer'].mean())
 vehicles_df['paint_color'] = vehicles_df['paint_color'].fillna('No color')
 vehicles_df['is_4wd'] = vehicles_df['is_4wd'].fillna(0)
 
