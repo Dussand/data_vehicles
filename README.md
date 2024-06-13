@@ -1,2 +1,3 @@
 # project_spritn5
-This is my next project. 
+Esta es una aplicación web desarrollada para analizar datos de vehículos. La aplicación permite a los usuarios cargar conjuntos de datos de vehículos, explorar y visualizar información importante sobre ellos, como el kilometraje, el año de fabricación, la marca, el modelo, etc.
+
