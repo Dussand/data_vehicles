@@ -7,8 +7,11 @@ vehicles_df = pd.read_csv(r'\Users\hp\Desktop\vehicles_env\data_vehicles\vehicle
 
 
 st.header("Data viewer") #Creamos el encabezado
-
 data_button = st.button("Mostrar la tabla de los datos")
+
+vehicles_df['model_year'] = vehicles_df['model_year'].fillna('No year', inplace=True)
+
+
 
 if data_button:
     st.write("Conjunto de datos de anuncios de venta de coches") #Texto que aparece al apretar el boton
