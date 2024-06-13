@@ -7,7 +7,12 @@ vehicles_df = pd.read_csv(r'\Users\hp\Desktop\vehicles_env\data_vehicles\vehicle
 
 
 st.header("Data viewer") #Creamos el encabezado
-print(vehicles_df)
+
+data_button = st.button("Mostrar la tabla de los datos")
+
+if data_button:
+    st.write("Conjunto de datos de anuncios de venta de coches") #Texto que aparece al apretar el boton
+    vehicles_df #se muestra el dataframe
 
 hist_button = st.button('Construir histograma') #Creamos el boton que construye el histograma de la data
 
