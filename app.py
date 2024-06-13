@@ -6,7 +6,9 @@ import plotly_express as px
 vehicles_df = pd.read_csv(r'\Users\hp\Desktop\vehicles_env\data_vehicles\vehicles_us.csv')
 
 
-st.header("Data de vehiculos") #Creamos el encabezado
+st.header("Data viewer") #Creamos el encabezado
+print(vehicles_df)
+
 hist_button = st.button('Construir histograma') #Creamos el boton que construye el histograma de la data
 
 if hist_button: #al apretar el boton
