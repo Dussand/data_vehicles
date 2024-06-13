@@ -16,7 +16,7 @@ if hist_button: #al apretar el boton
 
 #crea una casilla de verificacion 
 
-build_histogram = st.checkbox('Contruir grafico de dispersion')
+build_histogram = st.button('Contruir grafico de dispersion')
 
 if build_histogram:
     st.write('Creacion de histograma para el conjunto de datos de anuncios de venta de coches')
