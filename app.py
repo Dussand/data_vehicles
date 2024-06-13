@@ -35,10 +35,4 @@ if build_histogram:
     st.plotly_chart(fig_scatter, use_container_width=True) #Crea el grafico de manera interactiva
     st.write('El gráfico de dispersión muestra que los vehículos con menor kilometraje tienden a tener precios más altos, mientras que los precios disminuyen con el aumento del kilometraje. Algunos puntos atípicos con precios muy altos en bajos kilometrajes destacan por características específicas del vehículo.')
 
-scatter_button = st.button('Construir grafico de dispersion por modelo')
 
-if scatter_button:
-    st.write('Creacion de histograma para el conjunto de datos de anuncios de venta de coches')
-    fig_sca = px.scatter(vehicles_df, y = 'model', x = 'price')
-    st.plotly_chart(fig_sca, use_container_width=True)
-    
