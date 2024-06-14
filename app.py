@@ -3,7 +3,7 @@ import pandas as pd
 import plotly_express as px
 
 #Leemos el archivo csv de vehicles_us.csv
-vehicles_df = pd.read_csv('/data_vehicles/vehicles_us.csv')
+vehicles_df = pd.read_csv('data_vehicles/vehicles_us.csv')
 
 
 st.header("Data viewer") #Creamos el encabezado
